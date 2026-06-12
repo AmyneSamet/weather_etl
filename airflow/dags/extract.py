@@ -9,7 +9,7 @@ from typing import List, Dict, Optional
 class weather_extractor:
     def __init__(self):
         
-        self.api_key = os.getenv('WEATHER_API_KEY',"41c2e15880cbade103785c09e632cf06")
+        self.api_key = os.getenv('WEATHER_API_KEY')
         self.base_url = "http://api.openweathermap.org/data/2.5/weather"
 
     def extract_city_weather(self, city: str) -> Optional[Dict]:
